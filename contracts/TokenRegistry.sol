@@ -61,6 +61,7 @@ contract TokenRegistry {
         );
     }
 
+    //This function is intended to be called inside tokenLocker's execute method, and should be internal not public.
     function onTokenMapReqEvent(bytes32[] memory topics, bytes memory data)
         internal
     {
