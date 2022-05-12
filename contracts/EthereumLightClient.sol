@@ -211,6 +211,8 @@ contract EthereumLightClient is Ethash, Initializable, PausableUpgradeable {
             current = blocks[current].parentHash;
         }
 
+        canonicalHead = _blockHash;
+
     }
 
     function isVerified(uint256 blockHash)
