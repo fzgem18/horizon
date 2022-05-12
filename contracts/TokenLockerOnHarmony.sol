@@ -44,6 +44,10 @@ contract TokenLockerOnHarmony is TokenLocker, OwnableUpgradeable {
             lightclient.VerifyReceiptsHash(blockHash, rootHash),
             "wrong receipt hash"
         );
+        require(
+            lightclient.isVerified(uint256(blockHash)),
+            "Block not verified"
+        );
         bytes32 receiptHash = keccak256(
             abi.encodePacked(blockHash, rootHash, mptkey)
         );
