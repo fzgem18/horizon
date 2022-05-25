@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "./lib/RLPReader.sol";
+import "./RLPReader.sol";
 
 library EthereumProver {
     using RLPReader for RLPReader.RLPItem;
