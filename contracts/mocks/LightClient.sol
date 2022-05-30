@@ -17,6 +17,7 @@ contract LightClientFake is ILightClient {
     function blocksByHeight(uint256 number, uint256)
         external
         override
+        pure
         returns (uint256)
     {
         return uint256(keccak256(abi.encode(number)));
@@ -25,6 +26,7 @@ contract LightClientFake is ILightClient {
     function VerifyReceiptsHash(bytes32 blockHash, bytes32 receiptsHash)
         external
         override
+        pure
         returns (bool)
     {
         blockHash;
