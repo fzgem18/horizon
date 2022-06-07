@@ -28,11 +28,11 @@ module.exports = {
             accounts: [`0x${HARMONY_PRIVATE_KEY}`]
         },
         kovan: {
-            url: `https://kovan.infura.io/v3/<project-id>`,
+            url: `https://kovan.infura.io/v3/${PROJECT_ID}`,
             accounts: [`0x${HARMONY_PRIVATE_KEY}`]
         },
         ropsten: {
-            url: `https://ropsten.infura.io/v3/<project-id>`,
+            url: `https://ropsten.infura.io/v3/${PROJECT_ID}`,
             accounts: [`0x${HARMONY_PRIVATE_KEY}`]
         }
     },
